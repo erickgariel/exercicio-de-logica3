@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+        function imprimirTabuadas(N) {
+            for (let i = 1; i <= N; i++) {
+            document.write("Tabuada do " + i + ":<br>");
+            for (let j = 1; j <= 10; j++) {
+            document.write(i + " x " + j + " = " + (i*j) + "<br>");
+            }
+            document.write();
+            }
+}
+
+            const N = parseInt(prompt("Digite o valor de N:"));
+            if (!isNaN(N)) {
+            imprimirTabuadas(N);
+            } else {
+            document.write("Por favor, digite um número inteiro válido.");
+}
+
+
+</script>
+</body>
+</html>

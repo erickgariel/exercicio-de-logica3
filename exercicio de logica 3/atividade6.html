@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+       
+        var num1 = 0
+        var num2 = 0
+        var media = 0
+        var soma = 0
+        var alunos = 0
+        var loop = true
+
+        while(loop == true){
+
+            num1 = parseFloat(prompt("Adicione a 1ª nota: "))
+            num2 = parseFloat(prompt("Adicione a 2ª nota: "))
+            soma = num1 + num2
+            media = soma / 2
+            alert("A média da nota do aluno é: " + media)
+
+            if (media >= 9.5){
+                alunos++
+            }
+
+            var continuar = prompt("Deseja continuar? S/N")
+
+            if (continuar == "S" || continuar == "s"){
+                loop = true 
+            }
+            else if (continuar == "N" || continuar == "n"){
+                loop = false
+            }
+            else
+                alert("Comando errado!")
+            
+        }
+        
+        
+
+        alert("O número de alunos aprovados foi " + alunos)
+    </script>
+</body>
+</html>

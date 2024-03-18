@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+        alert("informe dois valores.")
+
+        var primeiro = parseInt(prompt("informe o primeiro número: "))
+        var segundo = parseInt(prompt("informe o segundo número: "))
+
+        if (segundo<= 0){
+            segundo = parseInt(prompt("informe um novo valor para o segundo número: "))
+        }
+        else{
+            var conta = primeiro / segundo
+            document.write("O resultado é igual a: "+ conta)
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+        var num1 = 0
+        var numeroDentro = 0
+        var numeroFora = 0
+
+        for (var i = 0; i < 10; i++){
+            do {
+                num1 = parseInt(prompt("Adicione o " + (i+1) + "ª valor!"))
+                if (isNaN(num1))
+                alert("O valor digitando precisa ser número!")
+                if (num1 >= 24 && num1 <= 42)
+                    numeroDentro++
+                else
+                    numeroFora++
+            }
+            while(isNaN(num1))
+        }
+        alert("Dos 10 números que foram citados. "+ numeroDentro + " "+ "Estão no intervalo 24 e 42 e " + numeroFora + " Estão fora desse intervalo.")
+    </script>
+</body>
+</html>

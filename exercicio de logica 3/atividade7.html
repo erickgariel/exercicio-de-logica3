@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+         var num1 = 0;
+        var media = 0;
+        var soma = 0;
+
+        for (var i = 0; i < 6; i++){
+            do {
+                num1 = parseFloat(prompt("Adicione a " + (i+1) + "ª nota: "));
+                if (isNaN(num1))
+                alert("O valor digitado precisa ser um número! ");
+                else if (num1 < 0 || num1 >10)
+                alert("O valor digitado precisa estar entre 0 e 10!");
+            }
+            while (isNaN(num1) || num1 < 0 || num1 >10);
+            soma += num1;
+        }
+        media = soma / i
+        alert(" A média da nota do aluno é: " + media)
+    </script>
+</body>
+</html>

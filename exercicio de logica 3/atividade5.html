@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio de logica</title>
+</head>
+<body>
+    <script>
+        var num1 = parseInt(prompt("informe o primeiro número: "))
+        var num2 = parseInt(prompt("informe o segundo número: "))
+        var media = 0;
+        var total = 0;
+
+        if(num1<num2){
+            for (var i=num1; i<=num2; i++){
+                media = media + i;
+                total ++;
+            }
+            console.log(media/total);
+        }
+        else{
+            console.log("Primeiro número precisa ser menor que o segundo");
+        }
+
+    </script>
+</body>
+</html>
